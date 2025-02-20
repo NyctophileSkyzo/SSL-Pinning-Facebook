@@ -1,22 +1,30 @@
-# SSL Pinning Bypass Facebook
+The python SDK is made up of 3 main components (Axil, Axi, function), each with configurable arguments.
 
-Repositori ini berisi kumpulan kode dari aplikasi [**Facebook**](https://github.com/Eltion/Facebook-SSL-Pinning-Bypass) untuk melakukan automasi atau aktivitas tertentu. Metode yang saya gunakan adalah [**Capture HTTP Requests**](https://www.google.com/search?q=Capture+HTTP+Requests&sca_esv=7479081811d2e948&sxsrf=ACQVn08dTvPZdGcBLZaCwog9wcg2NH_kYw%3A1710254639770&ei=L2rwZfXOLtOS4-EP3aa8iAs&ved=0ahUKEwi1op2C--6EAxVTyTgGHV0TD7EQ4dUDCBA&uact=5&oq=Capture+HTTP+Requests&gs_lp=Egxnd3Mtd2l6LXNlcnAiFUNhcHR1cmUgSFRUUCBSZXF1ZXN0czIMECMYgAQYigUYExgnMgQQIxgnMggQABiABBjLATIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSNVaUMgFWL89cAJ4AZABApgB7gOgAewTqgEJMC4zLjIuMi4yuAEDyAEA-AEBmAIJoALcDcICBxAjGLADGCfCAgoQABhHGNYEGLADwgIEEAAYHsICBhAAGAUYHsICBhAAGAcYHpgDAIgGAZAGCZIHCTIuMy4yLjEuMaAH9lE&sclient=gws-wiz-serp).
+Axil (a.k.a. Axim)
 
-### My Tools
-- [**Facebook Patched APK**](https://github.com/Eltion/Facebook-SSL-Pinning-Bypass) by [**Eltion**](https://github.com/Eltion)
-- [**BurpSuite**](https://portswigger.net/burp/communitydownload)
-- [**Frida**](https://github.com/frida/frida/releases)
-- [**NoxPlayer**](https://id.bignox.com/)
+    Takes in a Goal
+        Drives the agents behaviour through the high level plan which influences the thinking and creation of tasks that would contribute towards this goal
+    Takes in a Description
+        Combination of what was previously known as World Info + Agent Description
+        This include a description of the "world" the agent lives in, and the personality and background of the agent
 
-### Informasi
-- Author : [**Dapunta Khurayra X**](https://web.facebook.com/Dapunta.Khurayra.X)
-- Release : 12/03/2024
-- Last Update : 12/03/2024
+Axi (a.k.a. AXXi)
 
-### Thanks To
-- [**Eltion**](https://github.com/Eltion)
-- [**Sidiq**](https://github.com/sidiqbrewstreet)
-- [**Rochmat**](https://github.com/Rozhbasxyz)
+    Takes in a Description
+        Used to control which workers are called by the agent, based on the high-level plan and tasks created to contribute to the goal
 
-### Peringatan
-Segala bentuk kerugian yang disebabkan oleh alat ini, adalah murni **tanggung jawab user**, bukan tanggung jawab Author, terima kasih.
+Function
+
+    Takes in a Description
+        Used to control which functions are called by the workers, based on each worker's low-level plan
+        This can be any python executable
+
+Features
+
+    Develop your own custom agents for any application or platform.
+    Ability to control your agents and workers via descriptions (prompts)
+    Full control of what the agent sees (state) and can do (actions/functions)
+    Ability to fully customise functions. This could include various combinations of programmed logic. For example:
+        Calling an API to retrieve data
+        Calling an API to retrieve data, followed by custom calculations or data processing logic in python code
+        2 API calls chained together (e.g. calling an API to retrieve web data, and then posting a tweet)
